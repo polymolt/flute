@@ -45,6 +45,7 @@ class HomeController extends Controller
 
         //encrypt
         $buffer = Crypto::encrypt($request->input('message'), $request->input('password'));
+        $request->offsetSet('password', null);
         
         $msg = new Message();
         $msg->msg_id = substr(md5(random_bytes(8)),0,8);

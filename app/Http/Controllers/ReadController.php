@@ -66,6 +66,7 @@ class ReadController extends Controller
         }
         
         $msg->forceDelete();
+        $psw = null;
         return view('message.info', [
                 'page_header' => __('ui.decrypted_header'),
                 'info' => $plaintext,
