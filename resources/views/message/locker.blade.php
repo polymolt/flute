@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Message Encrypted')
+@section('title', $app_name)
 
 @section('box-content')
     <div class="content">
