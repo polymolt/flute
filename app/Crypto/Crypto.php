@@ -10,6 +10,7 @@ namespace App\Crypto;
 */
 class Crypto
 {
+	const SALT_LENGTH = 16;
 	const ENCRYPT_METHOD = 'AES-256-CTR';
 	const HASH_ALGO = 'sha256';
 	const KEY_LENGTH = 48;
@@ -34,7 +35,7 @@ class Crypto
 	public static function encrypt($plaintext, $passphrase)
 	{
 		//prep for encryption
-		$salt = random_bytes(8);
+		$salt = random_bytes(self::SALT_LENGTH);
 		$key = self::keyGen($passphrase, $salt);
 		$iv = random_bytes((openssl_cipher_iv_length(self::ENCRYPT_METHOD)));
 		$mac = hash_hmac(self::HASH_ALGO, $plaintext, substr($key, 32), true);
@@ -101,7 +102,7 @@ class Crypto
 		// scrypt params.
 		$_N = 16384; // The CPU difficultly (must be a power of 2, > 1)
 		$_r = 8; // The memory difficulty
-		$_p = 2; // The parallel difficulty		
+		$_p = 8; // The parallel difficulty		
 
 		return scrypt($passphrase, $salt, $_N, $_r, $_p, self::KEY_LENGTH);
 	}
