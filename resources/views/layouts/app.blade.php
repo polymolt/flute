@@ -11,7 +11,7 @@
     </head>
 
     <body style="background: #f0f0f0">
-        <div class="container" style="padding: 15% 0%;">
+        <div class="container" style="padding: 10% 0%;">
             <div class="ui card" style="position: relative; width:300px; margin: 0 auto;">
                 @yield('box-content')
                 <div class="extra content">
