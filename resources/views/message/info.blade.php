@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Flute')
+@section('title', config('app.name'))
 
 @section('box-content')
     <div class="content">

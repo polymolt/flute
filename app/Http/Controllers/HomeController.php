@@ -24,9 +24,7 @@ class HomeController extends Controller
      */
     public function new()
     {
-        return view('index',[
-                'app_name' => config('app.name'),
-            ]);
+        return view('index');
     }
 
     /**

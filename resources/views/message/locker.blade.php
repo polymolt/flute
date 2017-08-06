@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $app_name)
+@section('title', config('app.name'))
 
 @section('box-content')
     <div class="content">
