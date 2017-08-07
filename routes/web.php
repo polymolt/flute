@@ -14,5 +14,7 @@
 Route::get('/', 'HomeController@new');
 Route::post('/', 'HomeController@newHandle');
 
+Route::get('/metrix', 'MetrixController@new');
+
 Route::get('/{id}', 'ReadController@read');
 Route::post('/{id}', 'ReadController@readHandle');

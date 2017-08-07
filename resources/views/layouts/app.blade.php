@@ -15,7 +15,7 @@
             <div class="ui card" style="position: relative; width:300px; margin: 0 auto;">
                 @yield('box-content')
                 <div class="extra content">
-                    <i>@yield('box-info')</i>
+                    @yield('box-info')
                 </div>
             </div>
         </div>

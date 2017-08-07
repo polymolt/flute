@@ -26,4 +26,7 @@
     </div>
 @endsection
 
-@section('box-info', __('ui.new_message_info'))
+@section('box-info')
+    {{ __('ui.new_message_info') }}
+    <a class="right floated" href="/metrix" style="color: black;"><i class="random icon"></i>{{__('ui.metrix_header') }}</a>
+@endsection
