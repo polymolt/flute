@@ -53,7 +53,7 @@ Bob 输入密码，Flute 通过同样的方式再次生成密钥并尝试解密�
  (for our community, *you*, also)
 
 **Priority**
-- [ ] Generate PASS PAD for secured sharing (See Project Wiki).
+- [x] Generate PASS PAD for secured sharing (See Project Wiki).
 - [ ] Experts, audit `app/Crypto/Crypto.php` please!!
 - [ ] Clean up the code. Make it neat. 
 - [ ] Make it Docker-able!
