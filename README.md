@@ -59,8 +59,12 @@ Bob 输入密码，Flute 通过同样的方式再次生成密钥并尝试解密�
 - [ ] Make it Docker-able!
 
 **Future**
-- [ ] Adopt Web Crypto API
+- [ ] ~~Adopt Web Crypto API~~
+
+      Considering the browser distribution in domestic China, the browser should not be trusted to perform encryption related works of any kind. Maybe adding a standalone branch of Flute allowing only certain whitelisted browsers can be a workaround. Submit your opinions on *issues*.
+
 - [ ] Support file encryption/sharing.
+
 - [ ] Anonymous Public/Private key message dropping page.
 
 ## Thanks To...
