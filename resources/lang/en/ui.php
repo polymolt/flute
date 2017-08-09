@@ -5,9 +5,9 @@ return [
     'password_label' => 'Password',
 
     'metrix_header' => 'Password Metrix',
-    'metrix_info' => ' Securely copy or write down the metrix, and share it with your friend. Use one passowrd at a time to avoid exchanging passwords in unencrypted channel.',
+    'metrix_info' => 'Securely store the metrix then share it with a recipient. Use one passowrd at a time to avoid exchanging passwords thru monitored channel.',
     'metrix_button_refresh' => 'Refresh',
-    'metrix_refresh_info' => 'Refresh mutiple times and rapidly copy down one metrix to increase confidentiality.',
+    'metrix_refresh_info' => 'Copy down one of many refreshes.',
 
     'decrypt_message_header' => 'Decrypt this Message',
     'decrypt_message_info' => 'This message will be permanently destroyed once decrypted.',
